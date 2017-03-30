@@ -17,6 +17,9 @@ const indexJSCallback = function(file, cb) {
 
   files.forEach( f => {
     let { name, ext } = path.parse(f);
+    if( name === 'index' && ext === '.js' ) {
+      return;
+    }
     const rname = dash.test(name) ? changeCase.pascalCase(name) : name;
     exportNames.push(rname);
     if( ext !== '.js' ) {
