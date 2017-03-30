@@ -6,7 +6,7 @@ gulp pipe for creating index.js files from directories
 in a gulp file
 
 ````javascript
-import indexJS from 'index-js';
+var indexJS = require('index-js');
 
 gulp.task('make-indecies', () => {
 

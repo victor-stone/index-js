@@ -1,22 +1,5 @@
 'use strict';
 
-/*
-Usage: (in a gulp file)
-
-import indexJS from 'index-js';
-
-gulp.task('make-indecies', () => {
-
-  var dirs = [ 
-      './app/components',
-      './app/mixins'
-    ];
-  return gulp.src(dirs, { base: './' })
-          .pipe(indexJS())
-          .pipe(gulp.dest('./dist'));
-});
-
-*/
 var map        = require('map-stream');
 var glob       = require('glob');
 var path       = require('path');
